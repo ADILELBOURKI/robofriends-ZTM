@@ -8,10 +8,11 @@ import Card from "./Card";
 import * as serviceWorker from "./serviceWorker";
 import { robots } from "./robots";
 import CardList from "./CardList";
+import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <CardList robots={robots} />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
