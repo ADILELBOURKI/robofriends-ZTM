@@ -11,10 +11,12 @@ class App extends React.Component {
       searchField: "",
     };
   }
+
+  //componentdidmount
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => {
-        response.json();
+        return response.json();
       })
       .then((users) => {
         this.setState({ robots: users });
